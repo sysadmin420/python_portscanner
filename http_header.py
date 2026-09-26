@@ -26,7 +26,7 @@ def request_header(ip_addr: str, port: int, common_service: str, ipv6=False):
 		else:
 			http_protocol = "http"
 
-		target_url = f"{hypertext}://{ip_addr}:{port}/"
+		target_url = f"{http_protocol}://{ip_addr}:{port}/"
 
 		if ipv6 == True:
 			target_url = f"{http_protocol}://[{ip_addr}]:{port}/"
